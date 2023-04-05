@@ -1,0 +1,185 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 3600 750  2    50   Input Italic 0
+39_CYCLESTART
+$Comp
+L power:+3.3V #PWR?
+U 1 1 612E29FB
+P 1750 1650
+AR Path="/612E29FB" Ref="#PWR?"  Part="1" 
+AR Path="/612DE78A/612E29FB" Ref="#PWR0154"  Part="1" 
+F 0 "#PWR0154" H 1750 1500 50  0001 C CNN
+F 1 "+3.3V" V 1765 1778 50  0000 L CNN
+F 2 "" H 1750 1650 50  0001 C CNN
+F 3 "" H 1750 1650 50  0001 C CNN
+	1    1750 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 612E5F50
+P 3500 1250
+AR Path="/612E5F50" Ref="R?"  Part="1" 
+AR Path="/6125A347/612E5F50" Ref="R?"  Part="1" 
+AR Path="/612D6640/612E5F50" Ref="R?"  Part="1" 
+AR Path="/612DE78A/612E5F50" Ref="R40"  Part="1" 
+F 0 "R40" V 3293 1250 50  0000 C CNN
+F 1 "10K" V 3384 1250 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3430 1250 50  0001 C CNN
+F 3 "~" H 3500 1250 50  0001 C CNN
+	1    3500 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 612E7091
+P 3500 1450
+AR Path="/612E7091" Ref="#PWR?"  Part="1" 
+AR Path="/612DE78A/612E7091" Ref="#PWR0155"  Part="1" 
+F 0 "#PWR0155" H 3500 1200 50  0001 C CNN
+F 1 "GND" H 3505 1277 50  0000 C CNN
+F 2 "" H 3500 1450 50  0001 C CNN
+F 3 "" H 3500 1450 50  0001 C CNN
+	1    3500 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 1450 3500 1400
+Wire Wire Line
+	3500 1100 3500 750 
+Text GLabel 3600 1850 2    50   Input Italic 0
+36_CTRL_FEEDHOLD
+$Comp
+L Device:R R?
+U 1 1 612F0A95
+P 3500 2350
+AR Path="/612F0A95" Ref="R?"  Part="1" 
+AR Path="/6125A347/612F0A95" Ref="R?"  Part="1" 
+AR Path="/612D6640/612F0A95" Ref="R?"  Part="1" 
+AR Path="/612DE78A/612F0A95" Ref="R41"  Part="1" 
+F 0 "R41" V 3293 2350 50  0000 C CNN
+F 1 "10K" V 3384 2350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3430 2350 50  0001 C CNN
+F 3 "~" H 3500 2350 50  0001 C CNN
+	1    3500 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 612F0A9B
+P 3500 2550
+AR Path="/612F0A9B" Ref="#PWR?"  Part="1" 
+AR Path="/612DE78A/612F0A9B" Ref="#PWR0157"  Part="1" 
+F 0 "#PWR0157" H 3500 2300 50  0001 C CNN
+F 1 "GND" H 3505 2377 50  0000 C CNN
+F 2 "" H 3500 2550 50  0001 C CNN
+F 3 "" H 3500 2550 50  0001 C CNN
+	1    3500 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2550 3500 2500
+Wire Wire Line
+	3500 2200 3500 1850
+Text GLabel 3600 3100 2    50   Input Italic 0
+34_CTRL_RESET
+$Comp
+L Device:R R?
+U 1 1 612F3858
+P 3500 3600
+AR Path="/612F3858" Ref="R?"  Part="1" 
+AR Path="/6125A347/612F3858" Ref="R?"  Part="1" 
+AR Path="/612D6640/612F3858" Ref="R?"  Part="1" 
+AR Path="/612DE78A/612F3858" Ref="R42"  Part="1" 
+F 0 "R42" V 3293 3600 50  0000 C CNN
+F 1 "10K" V 3384 3600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3430 3600 50  0001 C CNN
+F 3 "~" H 3500 3600 50  0001 C CNN
+	1    3500 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0159
+U 1 1 612F385E
+P 3500 3800
+F 0 "#PWR0159" H 3500 3550 50  0001 C CNN
+F 1 "GND" H 3505 3627 50  0000 C CNN
+F 2 "" H 3500 3800 50  0001 C CNN
+F 3 "" H 3500 3800 50  0001 C CNN
+	1    3500 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3800 3500 3750
+Wire Wire Line
+	3500 3450 3500 3100
+Wire Wire Line
+	1400 1550 1750 1550
+Text GLabel 1850 2050 2    50   Input ~ 0
+ENA+
+Wire Wire Line
+	1400 2050 1850 2050
+Wire Wire Line
+	3500 750  3600 750 
+Wire Wire Line
+	3500 1850 3600 1850
+Wire Wire Line
+	3500 3100 3600 3100
+$Comp
+L Connector:Conn_01x06_Male J40
+U 1 1 612B087F
+P 1200 1750
+F 0 "J40" H 1308 2131 50  0000 C CNN
+F 1 "TO_BUTTONBOX" H 1308 2040 50  0000 C CNN
+F 2 "Connector_JST:JST_EH_B6B-EH-A_1x06_P2.50mm_Vertical" H 1200 1750 50  0001 C CNN
+F 3 "~" H 1200 1750 50  0001 C CNN
+	1    1200 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1650 1400 1650
+$Comp
+L power:+12V #PWR?
+U 1 1 612ABB2F
+P 1750 1550
+AR Path="/612ABB2F" Ref="#PWR?"  Part="1" 
+AR Path="/6125A347/612ABB2F" Ref="#PWR?"  Part="1" 
+AR Path="/612DE78A/612ABB2F" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 1750 1400 50  0001 C CNN
+F 1 "+12V" V 1765 1678 50  0000 L CNN
+F 2 "" H 1750 1550 50  0001 C CNN
+F 3 "" H 1750 1550 50  0001 C CNN
+	1    1750 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 1750 2750 1750
+Wire Wire Line
+	2750 1750 2750 750 
+Wire Wire Line
+	2750 750  3500 750 
+Connection ~ 3500 750 
+Wire Wire Line
+	1400 1850 3500 1850
+Connection ~ 3500 1850
+Wire Wire Line
+	1400 1950 2750 1950
+Wire Wire Line
+	2750 1950 2750 3100
+Wire Wire Line
+	2750 3100 3500 3100
+Connection ~ 3500 3100
+$EndSCHEMATC

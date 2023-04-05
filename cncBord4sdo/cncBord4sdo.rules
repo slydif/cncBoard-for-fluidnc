@@ -1,0 +1,167 @@
+
+(rules PCB cncBord3
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 1839)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.3)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.8)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 300.2 (type default_relay))
+    (clear 50.0 (type smd_smd))
+    (clear 300.2 (type smd_relay))
+    (clear 300.2 (type "kicad_default"_relay))
+    (clear 300.2 (type pwr_relay))
+    (clear 300.2 (type relay_relay))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_1200:600_um"
+    (shape
+      (circle F.Cu 1200.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 1200.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_1500:600_um"
+    (shape
+      (circle F.Cu 1500.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 1500.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_1200:600_um" "Via[0-1]_1200:600_um" default
+  )
+  (via 
+    "Via[0-1]_1500:600_um" "Via[0-1]_1500:600_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_1200:600_um-kicad_default" "Via[0-1]_1200:600_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_1500:600_um-kicad_default" "Via[0-1]_1500:600_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-pwr" "Via[0-1]_800:400_um" pwr
+  )
+  (via 
+    "Via[0-1]_1200:600_um-pwr" "Via[0-1]_1200:600_um" pwr
+  )
+  (via 
+    "Via[0-1]_1500:600_um-pwr" "Via[0-1]_1500:600_um" pwr
+  )
+  (via 
+    "Via[0-1]_800:400_um-relay" "Via[0-1]_800:400_um" relay
+  )
+  (via 
+    "Via[0-1]_1200:600_um-relay" "Via[0-1]_1200:600_um" relay
+  )
+  (via 
+    "Via[0-1]_1500:600_um-relay" "Via[0-1]_1500:600_um" relay
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (via_rule
+    pwr "Via[0-1]_1200:600_um-pwr"
+  )
+  (via_rule
+    relay "Via[0-1]_1500:600_um-relay"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "Net-(D1-Pad2)" "Net-(D2-Pad2)" "Net-(J0-Pad6)" ENA+ "Net-(J0-Pad4)" "Net-(J0-Pad2)" "Net-(J1-Pad3)" "Net-(J1-Pad1)"
+    "Net-(J3-Pad2)" "Net-(J4-Pad2)" "17_XLIM" "Net-(J10-Pad6)" "Net-(J10-Pad4)" "Net-(J10-Pad2)" "Net-(J11-Pad3)" "Net-(J11-Pad1)"
+    "Net-(J13-Pad2)" "Net-(J14-Pad2)" "Net-(J20-Pad6)" "Net-(J20-Pad4)" "Net-(J20-Pad2)" "Net-(J21-Pad3)" "Net-(J21-Pad1)" "Net-(J23-Pad2)"
+    "Net-(J24-Pad2)" "4_YLIM" "Net-(J30-Pad6)" "Net-(J30-Pad4)" "Net-(J30-Pad2)" "Net-(J31-Pad3)" "Net-(J31-Pad1)" "Net-(J33-Pad2)"
+    "Net-(J34-Pad2)" "15_ZLIM" "34_CTRL_RESET" "36_CTRL_FEEDHOLD" "39_CYCLESTART" "35_PROBE" "3_RX" "1_TX"
+    "32_RES" "Net-(J60-Pad8)" "18_SD_CLK" "23_SD_MOSI" "5_SD_CS" "Net-(J60-Pad1)" "Net-(R2-Pad2)" "Net-(R3-Pad2)"
+    "Net-(R12-Pad2)" "Net-(R13-Pad2)" "Net-(R22-Pad2)" "Net-(R23-Pad2)" "Net-(R32-Pad2)" "Net-(R33-Pad2)" "Net-(U1-Pad38)" "Net-(U1-Pad37)"
+    "Net-(U1-Pad36)" "2_SPINDLE" "21_COOLANTMIST" "22_X1STEP" "Net-(U1-Pad18)" "Net-(U1-Pad17)" "Net-(U1-Pad16)" "12_XSTEP"
+    "14_YSTEP" "27_ZSTEP" "26_XDIR" "25_YDIR" "33_ZDIR" "Net-(U1-Pad19)" "19_SD_MISO" "Net-(MIST_REL1-Pad3)"
+    "Net-(R7-Pad2)" "Net-(R8-Pad2)" "Net-(R27-Pad2)" "Net-(R28-Pad2)" "Net-(R37-Pad2)" "Net-(R38-Pad2)" "Net-(R52-Pad2)" "16_X1LIM"
+    "Net-(J56-Pad4)" "Net-(J56-Pad3)" "Net-(J56-Pad2)" "Net-(R17-Pad2)" "Net-(R18-Pad2)" "13_X1DIR" "Net-(U1-Pad33)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class pwr
+    GND +3V3 +12V "Net-(C2-Pad1)"
+    (clearance_class pwr)
+    (via_rule pwr)
+    (rule
+      (width 700.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class relay
+    "Net-(J51-Pad2)" "Net-(J52-Pad2)" "Net-(J53-Pad2)" "Net-(J54-Pad2)" "Net-(K1-Pad5)" "Net-(K2-Pad5)"
+    (clearance_class relay)
+    (via_rule relay)
+    (rule
+      (width 1500.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

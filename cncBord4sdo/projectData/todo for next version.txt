@@ -1,0 +1,2 @@
+- limit switches and buttons need 330ohm resistor at 3.3v line, to prevent crash when shortcut
+- extra condensator

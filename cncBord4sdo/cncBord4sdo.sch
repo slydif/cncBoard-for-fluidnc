@@ -1,0 +1,394 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L cncBord3-rescue:DC-DC-STEP-DOWN-MP1584-slydif_standard B1
+U 1 1 6124CC66
+P 2500 1750
+F 0 "B1" H 2500 2336 59  0000 C CNN
+F 1 "DC-DC-STEP-DOWN-MP1584" H 2500 2231 59  0000 C CNN
+F 2 "jobboard3.0:DC-DC-STEP-DOWN-MP1584" H 2500 1750 50  0001 C CNN
+F 3 "" H 2500 1750 50  0001 C CNN
+	1    2500 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 6124ED32
+P 1500 1550
+F 0 "#PWR0101" H 1500 1300 50  0001 C CNN
+F 1 "GND" H 1505 1377 50  0000 C CNN
+F 2 "" H 1500 1550 50  0001 C CNN
+F 3 "" H 1500 1550 50  0001 C CNN
+	1    1500 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+12V #PWR0102
+U 1 1 612519E2
+P 1500 1850
+F 0 "#PWR0102" H 1500 1700 50  0001 C CNN
+F 1 "+12V" V 1515 1978 50  0000 L CNN
+F 2 "" H 1500 1850 50  0001 C CNN
+F 3 "" H 1500 1850 50  0001 C CNN
+	1    1500 1850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1500 1550 1800 1550
+Wire Wire Line
+	1800 1650 1800 1550
+Connection ~ 1800 1550
+Wire Wire Line
+	1800 1950 1800 1850
+Wire Wire Line
+	1500 1850 1800 1850
+Connection ~ 1800 1850
+Wire Wire Line
+	3200 1950 3200 1850
+Wire Wire Line
+	3500 1850 3200 1850
+Connection ~ 3200 1850
+Wire Wire Line
+	3200 1650 3200 1550
+$Comp
+L power:GND #PWR0104
+U 1 1 61254F8A
+P 3450 1550
+F 0 "#PWR0104" H 3450 1300 50  0001 C CNN
+F 1 "GND" H 3455 1377 50  0000 C CNN
+F 2 "" H 3450 1550 50  0001 C CNN
+F 3 "" H 3450 1550 50  0001 C CNN
+	1    3450 1550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3450 1550 3200 1550
+Connection ~ 3200 1550
+$Comp
+L power:GND #PWR0106
+U 1 1 61257859
+P 850 4400
+F 0 "#PWR0106" H 850 4150 50  0001 C CNN
+F 1 "GND" H 855 4227 50  0000 C CNN
+F 2 "" H 850 4400 50  0001 C CNN
+F 3 "" H 850 4400 50  0001 C CNN
+	1    850  4400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 61258D1A
+P 4300 3700
+F 0 "#PWR0107" H 4300 3450 50  0001 C CNN
+F 1 "GND" H 4305 3527 50  0000 C CNN
+F 2 "" H 4300 3700 50  0001 C CNN
+F 3 "" H 4300 3700 50  0001 C CNN
+	1    4300 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 6125918D
+P 4300 3100
+F 0 "#PWR0108" H 4300 2850 50  0001 C CNN
+F 1 "GND" H 4305 2927 50  0000 C CNN
+F 2 "" H 4300 3100 50  0001 C CNN
+F 3 "" H 4300 3100 50  0001 C CNN
+	1    4300 3100
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3550 4100 2    50   Output ~ 0
+17_XLIM
+Wire Wire Line
+	3350 4100 3550 4100
+Text GLabel 3550 4300 2    50   Output ~ 0
+4_YLIM
+Wire Wire Line
+	3550 4300 3350 4300
+Text GLabel 1450 3600 0    50   Output ~ 0
+35_PROBE
+Wire Wire Line
+	1750 3600 1450 3600
+Text GLabel 1450 3500 0    50   Output ~ 0
+34_CTRL_RESET
+Wire Wire Line
+	1750 3500 1450 3500
+Text GLabel 1450 3300 0    50   Output ~ 0
+36_CTRL_FEEDHOLD
+Wire Wire Line
+	1750 3300 1450 3300
+Text GLabel 1450 3400 0    50   Output ~ 0
+39_CYCLESTART
+Wire Wire Line
+	1450 3400 1750 3400
+Text GLabel 1450 4300 0    50   Output ~ 0
+12_XSTEP
+Wire Wire Line
+	1750 4300 1450 4300
+Wire Wire Line
+	850  4400 1750 4400
+Text GLabel 3550 3300 2    50   Output ~ 0
+22_X1STEP
+Wire Wire Line
+	3550 3300 3350 3300
+Wire Wire Line
+	3350 3700 4300 3700
+Text GLabel 1450 4200 0    50   Output ~ 0
+14_YSTEP
+Wire Wire Line
+	1450 4200 1750 4200
+Text GLabel 1450 4100 0    50   Output ~ 0
+27_ZSTEP
+Wire Wire Line
+	1450 4100 1750 4100
+Text GLabel 1450 4000 0    50   Output ~ 0
+26_XDIR
+Wire Wire Line
+	1450 4000 1750 4000
+Text GLabel 1450 3900 0    50   Output ~ 0
+25_YDIR
+Wire Wire Line
+	1450 3900 1750 3900
+Text GLabel 1450 3800 0    50   Output ~ 0
+33_ZDIR
+Wire Wire Line
+	1450 3800 1750 3800
+Text GLabel 3550 3600 2    50   Output ~ 0
+21_COOLANTMIST
+Wire Wire Line
+	3550 3600 3350 3600
+$Comp
+L Device:CP C1
+U 1 1 6125501B
+P 2550 2600
+F 0 "C1" V 2805 2600 50  0000 C CNN
+F 1 "100uF" V 2714 2600 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 2588 2450 50  0001 C CNN
+F 3 "~" H 2550 2600 50  0001 C CNN
+	1    2550 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2400 2600 1750 2600
+Wire Wire Line
+	2700 2600 3350 2600
+Wire Wire Line
+	3350 2600 3350 3100
+Wire Wire Line
+	4300 3100 3350 3100
+$Comp
+L Device:CP C2
+U 1 1 6125D589
+P 700 3050
+F 0 "C2" H 818 3096 50  0000 L CNN
+F 1 "10uF" H 818 3005 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 738 2900 50  0001 C CNN
+F 3 "~" H 700 3050 50  0001 C CNN
+	1    700  3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	700  3200 1750 3200
+$Sheet
+S 5700 800  500  300 
+U 6125A347
+F0 "Xctrl" 50
+F1 "Xctrl.sch" 50
+$EndSheet
+NoConn ~ 3350 4700
+NoConn ~ 3350 4800
+NoConn ~ 3350 4900
+NoConn ~ 1750 4900
+NoConn ~ 1750 4800
+NoConn ~ 1750 4700
+NoConn ~ 1750 4600
+$Sheet
+S 6450 800  500  300 
+U 612CD958
+F0 "X1ctrl" 50
+F1 "X1ctrl.sch" 50
+$EndSheet
+Text Notes 4650 1000 0    197  ~ 0
+X:
+Text Notes 4650 1550 0    197  ~ 0
+Y:
+Text Notes 4600 2100 0    197  Italic 0
+Z:
+$Sheet
+S 5700 1350 500  300 
+U 612D30E5
+F0 "Yctrl" 50
+F1 "Yctrl.sch" 50
+$EndSheet
+$Sheet
+S 5700 1900 500  300 
+U 612D6640
+F0 "Zctrl" 50
+F1 "Zctrl.sch" 50
+$EndSheet
+Text Notes 4600 2700 0    197  Italic 0
+BTN:
+$Sheet
+S 5700 2500 500  300 
+U 612DE78A
+F0 "buttons" 50
+F1 "buttons.sch" 50
+$EndSheet
+Wire Wire Line
+	3550 4500 3350 4500
+Text GLabel 3550 4500 2    50   Output ~ 0
+2_SPINDLE
+Wire Wire Line
+	3550 4600 3350 4600
+Text GLabel 3550 4600 2    50   Output ~ 0
+15_ZLIM
+$Sheet
+S 5700 3100 500  300 
+U 612D5140
+F0 "rest" 50
+F1 "rest.sch" 50
+$EndSheet
+Text Notes 4600 3300 0    197  Italic 0
+REST:
+$Comp
+L Connector_Generic:Conn_01x02 J100
+U 1 1 6127D82A
+P 850 950
+F 0 "J100" V 814 762 50  0000 R CNN
+F 1 "12V IN" V 723 762 50  0000 R CNN
+F 2 "Connector_Phoenix_MC_HighVoltage:PhoenixContact_MCV_1,5_2-G-5.08_1x02_P5.08mm_Vertical" H 850 950 50  0001 C CNN
+F 3 "~" H 850 950 50  0001 C CNN
+	1    850  950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0163
+U 1 1 612837F1
+P 950 1250
+F 0 "#PWR0163" H 950 1000 50  0001 C CNN
+F 1 "GND" H 955 1077 50  0000 C CNN
+F 2 "" H 950 1250 50  0001 C CNN
+F 3 "" H 950 1250 50  0001 C CNN
+	1    950  1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  1150 950  1250
+Wire Wire Line
+	850  1600 850  1150
+$Comp
+L power:+12V #PWR0162
+U 1 1 6128A3EE
+P 850 1600
+F 0 "#PWR0162" H 850 1450 50  0001 C CNN
+F 1 "+12V" H 865 1773 50  0000 C CNN
+F 2 "" H 850 1600 50  0001 C CNN
+F 3 "" H 850 1600 50  0001 C CNN
+	1    850  1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0103
+U 1 1 6128E1F1
+P 3500 1850
+F 0 "#PWR0103" H 3500 1700 50  0001 C CNN
+F 1 "+3.3V" V 3515 1978 50  0000 L CNN
+F 2 "" H 3500 1850 50  0001 C CNN
+F 3 "" H 3500 1850 50  0001 C CNN
+	1    3500 1850
+	0    1    1    0   
+$EndComp
+Text Notes 4600 3950 0    197  Italic 0
+SD:
+$Sheet
+S 5700 3750 500  300 
+U 612CB395
+F0 "sdcard" 50
+F1 "sdcard.sch" 50
+$EndSheet
+Text GLabel 3550 4000 2    50   Output ~ 0
+5_SD_CS
+Wire Wire Line
+	3550 4000 3350 4000
+Text GLabel 3550 3200 2    50   Output ~ 0
+23_SD_MOSI
+Wire Wire Line
+	3350 3200 3550 3200
+Text GLabel 3550 3900 2    50   Output ~ 0
+18_SD_CLK
+Wire Wire Line
+	3550 3900 3350 3900
+Text GLabel 3550 3800 2    50   Output ~ 0
+19_SD_MISO
+Wire Wire Line
+	3350 3800 3550 3800
+Text GLabel 3550 3400 2    50   Output ~ 0
+1_TX
+Text GLabel 3550 3500 2    50   Output ~ 0
+3_RX
+Wire Wire Line
+	3550 3400 3350 3400
+Wire Wire Line
+	3550 3500 3350 3500
+Text GLabel 3550 4200 2    50   Output ~ 0
+16_X1LIM
+Wire Wire Line
+	3550 4200 3350 4200
+Text GLabel 1450 4500 0    50   Output ~ 0
+13_X1DIR
+Connection ~ 3350 3100
+$Comp
+L cncBord3-rescue:ESP32-DEVKITC-32D-ESP32-DEVKITC-32D U1
+U 1 1 61246315
+P 2550 4000
+F 0 "U1" H 2550 5167 50  0000 C CNN
+F 1 "ESP32-DEVKITC-32D" H 2550 5076 50  0000 C CNN
+F 2 "ESP32-DEVKITC-32D:MODULE_ESP32-DEVKITC-32D" H 2550 4000 50  0001 L BNN
+F 3 "" H 2550 4000 50  0001 L BNN
+F 4 "Espressif Systems" H 2550 4000 50  0001 L BNN "MANUFACTURER"
+F 5 "4" H 2550 4000 50  0001 L BNN "PARTREV"
+	1    2550 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 4500 1750 4500
+Text GLabel 1450 3700 0    50   Output ~ 0
+32_RES
+Wire Wire Line
+	1750 3700 1450 3700
+Wire Wire Line
+	1750 2600 1750 3100
+Wire Wire Line
+	700  2900 700  2250
+Wire Wire Line
+	700  2250 3350 2250
+Wire Wire Line
+	3350 2250 3350 2600
+Connection ~ 3350 2600
+$Comp
+L power:+3.3V #PWR0105
+U 1 1 612570BA
+P 1750 3100
+F 0 "#PWR0105" H 1750 2950 50  0001 C CNN
+F 1 "+3.3V" V 1692 3031 50  0000 L CNN
+F 2 "" H 1750 3100 50  0001 C CNN
+F 3 "" H 1750 3100 50  0001 C CNN
+	1    1750 3100
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1750 3100
+NoConn ~ 3350 4400
+$EndSCHEMATC

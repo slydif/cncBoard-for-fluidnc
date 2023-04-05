@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "extra kicad footprints")(type "KiCad")(uri "C:/software/slydif_repo/projects/printplaten/extra kicad footprints")(options "")(descr ""))
+)
